@@ -1,14 +1,11 @@
 import sys
-
 from cmreslogging.handlers import CMRESHandler
-from cardoutils3.common import parse_argv
 
 from CardoExecutor.Common.Factory.Templates.Filters import WorkflowAndStepFilter, Level35Filter, NotLevel35Filter
 
 
 def get_config(level, environment, app_name, run_id):
     es_additional_fields = {"run_id": run_id, 'exec_command': ' '.join(sys.argv)}
-    es_additional_fields.update(parse_argv(sys.argv[1:]))
     return {
         "version": 1,
         "formatters": {

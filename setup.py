@@ -15,7 +15,7 @@ setup(name=pkgname,
 	platforms='Linux; Windows',
 	classifiers=[],
 	install_requires=[
-		'cmreslogging',
+		'cmreshandler',
 		'networkx==2.2.0',
 		'elasticsearch==5.4.0',
 		'cardoutils3',

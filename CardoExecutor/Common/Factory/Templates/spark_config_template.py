@@ -1,16 +1,15 @@
 def get_your_env1_config(app_name, executor_cores, executor_memory, max_cores, partitions):
 	return {
 		"spark.app.name": app_name,
-		"spark.master": "spark://your-host-spark-master:7077",
+		"spark.master": "spark://192.168.1.118:7077",
 		"spark.executor.cores": str(executor_cores),
 		"spark.eventLog.enabled": "true",
 		"spark.executor.memory": str(executor_memory),
 		"spark.cores.max": str(max_cores),
 		"spark.logConf": "true",
 		"spark.sql.shuffle.partitions": str(partitions),
-		"spark.jars": "file:///your_path_to_jar1.jar,"
-					  "file:///your_path_to_jar2.jar",
 		'spark.sql.catalogImplementation': 'hive',
+		"spark.jars": "",
 	}
 
 
