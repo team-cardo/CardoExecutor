@@ -8,6 +8,7 @@ from CardoExecutor.Common.Tests.StepAccumulatorRuntimeTest import StepAccumulato
 from CardoExecutor.Common.UnitTests.MockLoggingHandler import MockLoggingHandler
 from CardoExecutor.Common.CardoContext import CardoContext
 
+
 class StepAccumulatorRuntimeTestTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

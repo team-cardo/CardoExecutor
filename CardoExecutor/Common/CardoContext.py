@@ -12,6 +12,7 @@ from pyspark.streaming.context import StreamingContext
 from CardoExecutor.Contract.CardoContextBase import CardoContextBase
 from CardoExecutor.Contract.Metaclasses import Singleton
 
+
 class CardoContext(CardoContextBase, metaclass=Singleton):
 	ZIP_CREATED = False
 	def __init__(self, spark_config, log_config, run_id=None, debug=False, logger=None, stream=False,

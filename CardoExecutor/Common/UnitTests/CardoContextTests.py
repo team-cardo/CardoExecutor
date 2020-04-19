@@ -4,6 +4,7 @@ from pyspark.streaming import StreamingContext
 
 from CardoExecutor.Common.CardoContext import CardoContext
 
+
 class CardoContextTests(unittest.TestCase):
 	def test_create_spark(self):
 		# Arrange
