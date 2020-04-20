@@ -1,5 +1,5 @@
+six
 requests
 networkx
 pip install -i elasticsearch==5.4.0
-cmreslogging
-cardo_utils
+cmreshandler
