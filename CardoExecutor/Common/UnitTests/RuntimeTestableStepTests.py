@@ -6,6 +6,7 @@ from CardoExecutor.Common.Factory.CardoContextFactory import CardoContextFactory
 from CardoExecutor.Common.Tests.RuntimeTestableStep import RuntimeTestableStep
 from CardoExecutor.Common.UnitTests.MockLoggingHandler import MockLoggingHandler
 from CardoExecutor.Contract.IStep import IStep
+from CardoExecutor.Common.CardoContext import CardoContext
 
 
 class RuntimeTestableStepTests(unittest.TestCase):
@@ -17,6 +18,7 @@ class RuntimeTestableStepTests(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.context.spark.stop()
+        CardoContext.destroy()
 
     def setUp(self):
         self.log_handler = MockLoggingHandler()
