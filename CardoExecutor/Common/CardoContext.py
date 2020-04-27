@@ -10,7 +10,7 @@ from pyspark.sql import SparkSession
 from pyspark.streaming.context import StreamingContext
 
 from CardoExecutor.Contract.CardoContextBase import CardoContextBase
-from CardoExecutor.Contract.Metaclasses import Singleton
+from CardoExecutor.Contract.MetaClasses import Singleton
 
 
 class CardoContext(CardoContextBase, metaclass=Singleton):
